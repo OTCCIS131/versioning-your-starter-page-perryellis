@@ -1,0 +1,104 @@
+/*Developer:  Perry Ellis
+File name:  style.css
+Date:  	   8/23/17
+Assignment: Bootstrap Starter
+*/
+html {
+    height: 100%;
+    
+    background: linear-gradient(to bottom, #000000 0%, #006699 100%);
+    background-position: center;
+	background-attachment: fixed;
+    background-repeat:no-repeat;
+    position:absolute; 
+}
+.grid {
+    height: 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "title title"
+    "header header"
+    "content content"
+    "footer footer";
+}
+.title {
+    grid-area: title;
+    font-size: 55px;
+    color: #ff9900;
+    font-family: 'Bungee Inline', cursive;
+    
+}
+.header {
+    grid-area: header;  
+}
+.navbar {
+    background-color: #1a1a1a; 
+}
+.navbar a{
+    color: #ff9900;
+}
+li {
+    font-family: 'Bungee Inline', cursive;
+    padding-top: 15px;
+    margin: 12px;
+    float: left;
+    font-size: 20px;   
+}
+ul {
+    list-style-type: none;
+    float: left; 
+ }
+.content {
+    margin-top: 25px;
+    grid-area: content; 
+    background-color: #1a1a1a; 
+    color: #ff9900;
+    font-size: 18px;
+    width: 100%;
+    padding-bottom: 55px;
+}
+.footer {
+    grid-area: footer; 
+    font-size: 25px;
+    color: #ff9900;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: #1a1a1a; 
+    text-align: center;
+    font-family: 'Bungee Inline', cursive;
+    margin-top: 25px;
+}
+h2 {
+    padding-left: 25px;
+}
+.container {
+    font-size: 12px;
+    width: 70%;
+}
+img {
+    display: none;
+}
+.img1 {
+    width: 360px;
+    height: 500px;
+    float: left;
+    padding-right: 15px;
+    padding-left:  15px;
+    padding-bottom: 20px;
+}
+.img2 { 
+    width: 360px;
+    height: 500px;
+    float: right;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+@media screen and (min-width: 750px) 
+{
+   img{display: block;}
+}
